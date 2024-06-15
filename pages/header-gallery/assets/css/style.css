@@ -606,7 +606,7 @@ main .container #animated {
     }
 }
 
-/* dev */
+/* dev */ /*
 main #static, main #animated {
     outline-width: 1px;
     outline-color: red;
