@@ -1,0 +1,143 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    
+    height: 100dvh;
+    margin: 0;
+
+    /* cssgradient.io */
+    background: #fff681;
+    background: -moz-linear-gradient(120deg, #fff681 30%, #ff9f36 40%);
+    background: -webkit-linear-gradient(120deg, #fff681 30%, #ff9f36 40%);
+    background: linear-gradient(120deg, #fff681 30%, #ff9f36 40%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff681",endColorstr="#ff9f36",GradientType=1);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+    > .container {
+        display: inherit;
+        justify-content: center;
+
+        height: 42px;
+        width: 512px;
+        padding: 16px;
+        margin: 8px;
+        background-color: rgb(255, 255, 255, 0.25);
+        border-radius: 32px;
+        box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.5);
+
+        > img {
+            height: inherit;
+        }
+    }
+}
+
+main {
+    grid-row-start: 2;
+
+    display: flex;
+    justify-content: center;
+
+    > .container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+
+        width: 75%;
+
+        > img {
+            align-self: center;
+            justify-self: center;
+
+            height: 75%;
+        }
+
+        > .container {
+            grid-column-start: 2;
+            
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+
+            padding: 32px 64px;
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 32px;
+            box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.5);
+
+            > .subtitle {
+                height: max-content;
+                font-size: 24px;
+                margin: 0;
+            }
+
+            > .title {
+                height: max-content;
+                font-size: 100px;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            > nav {
+                display: grid;
+                grid-template-columns: max-content max-content;
+                column-gap: 36px;
+
+                height: max-content;
+                margin-top: 24px;
+
+                > .button, .button:visited {
+                    height: max-content;
+                    width: max-content;
+                    padding: 8px 16px;
+                    color: inherit;
+                    /*background-color: #7457B5;*/
+                    border-radius: 24px;
+                    /*box-shadow: 0 4px #574285;*/
+                    text-decoration-line: none;
+                    background: rgb(148,0,211);
+                    background: -moz-linear-gradient(180deg, rgba(148,0,211,1) 0%, rgba(199,81,249,1) 48%, rgba(192,47,255,1) 52%, rgba(238,130,238,1) 100%);
+                    background: -webkit-linear-gradient(180deg, rgba(148,0,211,1) 0%, rgba(199,81,249,1) 48%, rgba(192,47,255,1) 52%, rgba(238,130,238,1) 100%);
+                    background: linear-gradient(180deg, rgba(148,0,211,1) 0%, rgba(199,81,249,1) 48%, rgba(192,47,255,1) 52%, rgba(238,130,238,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9400d3",endColorstr="#ee82ee",GradientType=1);
+                    box-shadow: 0 4px #9400d3;
+                }
+
+                > .button:hover {
+                    /*background-color: #926de2;*/
+                }
+
+                > .button:active {
+                    position: relative;
+                    top: 4px;
+
+                    box-shadow: 0 0;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    grid-row-start: 3;
+
+    display: flex;
+    align-items: end;
+
+    > .container {
+        margin: 16px;
+
+        > p {
+            margin: 0;
+        }
+    }
+}
+
+/* dev *//*
+* {
+    outline-width: 1px;
+    outline-color: red;
+    outline-style: dashed;
+}
