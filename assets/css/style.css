@@ -104,11 +104,11 @@ main {
                     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9400d3",endColorstr="#ee82ee",GradientType=1);
                     box-shadow: 0 4px #9400d3;
                 }
-
+/*
                 > .button:hover {
-                    /*background-color: #926de2;*/
+                    background-color: #926de2;
                 }
-
+*/
                 > .button:active {
                     position: relative;
                     top: 4px;
@@ -135,7 +135,7 @@ footer {
     }
 }
 
-/* dev *//*
+/* dev */ /*
 * {
     outline-width: 1px;
     outline-color: red;

@@ -298,7 +298,7 @@ main .container #static {
     }
 }
 
-/* dev */
+/* dev */ /*
 main #static {
     outline-width: 1px;
     outline-color: red;
